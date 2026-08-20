@@ -16,7 +16,7 @@ The Service Provider retains all intellectual property rights in the Application
 
 ### Third-Party Assets and Attribution
 
-While the Service Provider retains the intellectual property rights to the Application’s original code, branding, and design, the Application incorporates free illustrations and images provided by Irasutoya (いらすとや). These images are used in accordance with Irasutoya’s terms of use for free materials. All intellectual property rights, copyrights, and ownership of these specific illustrations remain entirely with Irasutoya and their original creator.
+While the Service Provider retains the intellectual property rights to the Application’s original code, branding, and design, the Application incorporates free illustrations and images provided by [Irasutoya](https://www.irasutoya.com/) (いらすとや). These images are used in accordance with Irasutoya’s terms of use for free materials. All intellectual property rights, copyrights, and ownership of these specific illustrations remain entirely with Irasutoya and their original creator.
 
 ### Termination
 
