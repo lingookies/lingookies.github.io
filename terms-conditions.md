@@ -68,9 +68,9 @@ The Service Provider strongly advises against jailbreaking or rooting your mobil
 
 ### Third Party Services
 
-[Google Play Services](https://policies.google.com/terms)
-[AdMob](https://developers.google.com/admob/terms)
-[RevenueCat](https://www.revenuecat.com/terms)
+* [Google Play Services](https://policies.google.com/terms)
+* [AdMob](https://developers.google.com/admob/terms)
+* [RevenueCat](https://www.revenuecat.com/terms)
 
 ### In-App Purchases and Refunds
 
