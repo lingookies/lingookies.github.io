@@ -1,5 +1,5 @@
 # Privacy Policy for Italian Word Combinations
-**Last updated: August 20th, 2026**
+**Last updated: August 24th, 2026**
 
 This privacy policy is applicable to the Italian Word Combinations app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereinafter referred to as the “Service Provider”.
 
@@ -128,6 +128,8 @@ Please note that the Application utilizes third-party services that have their o
 * [Google Play Services](https://www.google.com/policies/privacy/)
 * [AdMob](https://policies.google.com/technologies/partner-sites)
 * [RevenueCat](https://www.revenuecat.com/privacy)
+
+You can manage Admob privacy settings anytime in the Settings page of the Application, by tapping the option "Manage privacy settings" on the bottom of the page.
 
 ### How does the Application address children’s privacy?
 
