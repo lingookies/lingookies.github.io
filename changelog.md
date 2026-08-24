@@ -2,6 +2,9 @@
 
 Changelog for the Italian Word Combinations app available on the Google Play Store.
 
+### [V1.0.1] – August 22th, 2026
+Minor UI changes.
+
 ### [V1.0.0] – August 20th, 2026
 We are excited to share our first release of Italian Word Combinations!
 
