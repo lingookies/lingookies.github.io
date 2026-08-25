@@ -5,3 +5,5 @@
 * [Terms & Conditions](https://lingookies.github.io/terms-conditions.html)
 
 * [Changelog](https://lingookies.github.io/changelog.html)
+
+* [Frequently asked questions (FAQ)](https://lingookies.github.io/faq.html)
