@@ -3,7 +3,7 @@
 <details>
 <summary><strong>What is a collocation, and why do I need to learn them?</strong></summary>
 
-A collocation is a pair or group of words that naturally belong together. For example, in English you "pay attention," but in Italian, you "lend attention". Learning these natural word blocks prevents awkward translations, speeds up your thinking, and is the absolute fastest path to sounding like a native speaker.
+A collocation is a pair or group of words that naturally belong together. For example, in English you "pay attention", but in Italian, you "lend attention". Learning these natural word blocks prevents awkward translations, speeds up your thinking, and is the absolute fastest path to sounding like a native speaker.
 </details>
 <br>
 <details>
@@ -16,6 +16,14 @@ Yes! True fluency doesn't come from memorizing thousands of isolated, random wor
 <summary><strong>Is the app free to use?</strong></summary>
 
 Absolutely. You get full access to our core A1 library – 400 essential, everyday Italian collocations – completely free. This includes native speaker audio (no robotic text-to-speech!), contextual example sentences, flashcards, and quizzes.
+</details>
+<br>
+<details>
+<summary><strong>Can I try the app without creating an account?</strong></summary>
+
+Yes, we offer a limited Guest Mode so you can take a quick look around the interface! However, Guest Mode is strictly a preview. To actually interact with the flashcards, take quizzes, listen to the native audio, and track your daily progress, you will need to create a free account. 
+
+We require accounts to securely deliver our course content to your device, personalize your learning experience, and ensure your progress is always safely backed up.
 </details>
 <br>
 <details>
