@@ -1,6 +1,6 @@
 # Terms & Conditions for Italian Word Combinations
 
-**Last updated: July 13th, 2026**
+**Last updated: August 26th, 2026**
 
 These terms and conditions apply to the Italian Word Combinations app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereby referred to as the “Service Provider”.
 
@@ -17,6 +17,8 @@ The Service Provider retains all intellectual property rights in the Application
 ### Third-Party Assets and Attribution
 
 While the Service Provider retains the intellectual property rights to the Application’s original code, branding, and design, the Application incorporates free illustrations and images provided by [Irasutoya](https://www.irasutoya.com/) (いらすとや). These images are used in accordance with Irasutoya’s terms of use for free materials. All intellectual property rights, copyrights, and ownership of these specific illustrations remain entirely with Irasutoya and their original creator.
+
+Fonts used in the Application are [Lemon](https://fonts.google.com/specimen/Lemon?preview.script=Latn) and [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open+sans).
 
 ### Termination
 
