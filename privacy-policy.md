@@ -19,11 +19,11 @@ EU Representative: Lucia Dallaspezia
 
 The Application and related services acquire the information you supply when you download, access, or register for the service. Registration with the Service Provider is not mandatory. However, you might not be able to use some of the features offered by the service unless you register an account.
 
-The information acquired and stored by the Application if you sign in with Google is your Google’s account name, email address and profile picture URL
+The information acquired and stored by the Application when you register an account may include your account name, email address and, for "Sign in with" options, your profile picture URL.
 
-If you choose to create a dedicated account instead, the Application will collect your email address and your password will be securely stored and required to log into the Application.
+Creating an account is optional as you can navigate the Application with a limited guest mode without creating an account. Signing in with either your Google or Apple account or a dedicated account is however required for accessing all free content in the Application and syncing your progress on multiple devices, and it is required for providing you with subscription-only content.
 
-Creating an account is optional as you can navigate the Application with a limited guest mode without creating an account. Signing in with either your Google account or a dedicated account is however required for accessing all free content in the Application and syncing your progress on multiple devices, and it is required for providing you with subscription-only content, as your Premium purchase will be tied to your user identity.
+At the time of writing, it is not possible to authenticate anonymously in the Application, so you will need to create an account if you want to become a Premium member.
 
 The Service Provider may also use the information you provide to send important information, required notices, and, where permitted by law, marketing communications.
 
