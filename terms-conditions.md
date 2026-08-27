@@ -78,9 +78,9 @@ The Service Provider strongly advises against jailbreaking or rooting your mobil
 
 The Application offers premium content and features through auto-renewing subscriptions.
 
-* **Payment Processing**: All transactions are securely processed and managed directly by the Google Play Store. The Service Provider does not collect, process, or store your credit card or payment details.
-* **Subscriptions**: If you purchase a recurring subscription, it will automatically renew unless you cancel it at least 24 hours before the end of the current billing period. You can manage or cancel your subscriptions at any time directly through your Google Play account settings. Uninstalling the Application will not automatically cancel your subscription.
-* **Refunds**: Because all transactions are routed through Google Play, refund requests are governed entirely by Google Play’s standard refund policies. You can typically request a refund directly through the Google Play Store within 48 hours of the transaction. Beyond this 48-hour window, all sales are final and non-refundable, except where mandatory consumer protection laws in your jurisdiction dictate otherwise. The Service Provider cannot manually process direct refunds.
+* **Payment Processing**: All transactions are securely processed and managed directly by the Google Play Store or the Apple App Store. The Service Provider does not collect, process, or store your credit card or payment details.
+* **Subscriptions**: If you purchase a recurring subscription, it will automatically renew unless you cancel it at least 24 hours before the end of the current billing period. You can manage or cancel your subscriptions at any time directly through your Google Play or Apple account settings. Uninstalling the Application will not automatically cancel your subscription.
+* **Refunds**: Because all transactions are routed through Google Play or Apple, refund requests are governed entirely by Google Play’s or Apple's standard refund policies. You can typically request a refund directly through the Google Play Store or the Apple App Store within 48 hours of the transaction. Beyond this 48-hour window, all sales are final and non-refundable, except where mandatory consumer protection laws in your jurisdiction dictate otherwise. The Service Provider cannot manually process direct refunds.
 
 ### Limitation of Liability
 
