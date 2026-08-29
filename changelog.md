@@ -1,6 +1,9 @@
-# Changelog – Italian Word Combinations
+# Changelog – Learn Italian Expressions
 
-Changelog for the Italian Word Combinations app available on the Google Play Store.
+Changelog for the Learn Italian Expressions app.
+
+### [V1.0.3] – August 30th, 2026
+Typing (fill in the gaps) exercises are here!
 
 ### [V1.0.2] – August 28th, 2026
 UI and UX improvements. You will now see a warning if your network has connectivity issues and when you are back online.
