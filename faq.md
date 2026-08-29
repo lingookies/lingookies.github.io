@@ -1,4 +1,4 @@
-# FAQ for Italian Word Combinations
+# FAQ for Learn Italian Expressions
 
 <details>
 <summary><strong>What is a collocation, and why do I need to learn them?</strong></summary>
