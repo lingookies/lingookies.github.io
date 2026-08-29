@@ -1,8 +1,8 @@
-# Terms & Conditions for Italian Word Combinations
+# Terms & Conditions for Learn Italian Expressions
 
 **Last updated: August 26th, 2026**
 
-These terms and conditions apply to the Italian Word Combinations app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereby referred to as the “Service Provider”.
+These terms and conditions apply to the Learn Italian Expressions app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereby referred to as the “Service Provider”.
 
 By downloading or using the Application, you agree to these Terms and Conditions. You should read them carefully before using the Application.
 
