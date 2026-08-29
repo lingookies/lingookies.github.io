@@ -1,7 +1,7 @@
-# Privacy Policy for Italian Word Combinations
+# Privacy Policy for Learn Italian Expressions
 **Last updated: August 28th, 2026**
 
-This privacy policy is applicable to the Italian Word Combinations app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereinafter referred to as the “Service Provider”.
+This privacy policy is applicable to the Learn Italian Expressions app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereinafter referred to as the “Service Provider”.
 
 ### Data Controller Information
 
@@ -115,7 +115,7 @@ You have the right to request deletion of your personal data at any time, except
 
 ### Data Deletion
 
-You can request deletion of your personal data or account by accessing the Settings page of the Italian Word Combinations Appplication (accessible through the profile/gear icon in the bottom menu, then “Delete account” option). This action will remove all your records and your account from the Application, including your user progress in the interactive exercises and, in case you are a Premium user, the list of your favorite collocations.
+You can request deletion of your personal data or account by accessing the Settings page of the Learn Italian Expressions Appplication (accessible through the profile/gear icon in the bottom menu, then “Delete account” option). This action will remove all your records and your account from the Application, including your user progress in the interactive exercises and, in case you are a Premium user, the list of your favorite collocations.
 
 You can partially delete your data without deleting your account from the Application (“Reset exercise progress” option in the Settings page, which will reset all your user progress on the Application for all interactive exercises). If you are a Premium user, you can also delete your favorites list with the option “Reset favorite progress” on the same page.
 
