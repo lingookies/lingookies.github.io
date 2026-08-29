@@ -1,4 +1,4 @@
-# Italian Word Combinations – Useful Links
+# Learn Italian Expressions – Useful Links
 
 * [Privacy policy](https://lingookies.github.io/privacy-policy.html)
 
