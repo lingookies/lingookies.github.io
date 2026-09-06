@@ -3,7 +3,7 @@
 Changelog for the Learn Italian Expressions Android app.
 We are actively improving the app and would love to hear your thoughts. If you have any feedback or run into any issues, please reach out to us at: contact@lingookies.com
 
-### [V1.0.3] – September 1st, 2026
+### [V1.0.4] – September 1st, 2026
 Edge-case bug fix
 UI improvements for the flashcard exercises
 
