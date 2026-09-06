@@ -1,6 +1,11 @@
 # Changelog – Learn Italian Expressions
 
-Changelog for the Learn Italian Expressions app.
+Changelog for the Learn Italian Expressions Android app.
+We are actively improving the app and would love to hear your thoughts. If you have any feedback or run into any issues, please reach out to us at: contact@lingookies.com
+
+### [V1.0.3] – September 1st, 2026
+Edge-case bug fix
+UI improvements for the flashcard exercises
 
 ### [V1.0.3] – August 30th, 2026
 Typing (fill in the gaps) exercises are here!
@@ -13,5 +18,3 @@ Minor UI changes.
 
 ### [V1.0.0] – August 20th, 2026
 We are excited to share our first release of Italian Word Combinations!
-
-We are actively improving the app and would love to hear your thoughts. If you have any feedback or run into any issues, please reach out to us at: contact@lingookies.com
