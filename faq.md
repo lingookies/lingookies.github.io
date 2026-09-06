@@ -29,7 +29,7 @@ We require accounts to securely deliver our course content to your device, perso
 <details>
 <summary><strong>Why should I create an account?</strong></summary>
 
-Creating a free account lets you seamlessly sync your progress across devices. It safely tracks your flashcard review counts and exercise scores, ensuring you never lose your hard-earned progress if you switch phones.
+Creating a free account gives you access to audio recordings, images and all app content that is not available in Guest Mode, which is just a preview. It also lets you seamlessly sync your progress across devices. It safely tracks your flashcard review counts and exercise scores, ensuring you never lose your hard-earned progress if you switch phones.
 </details>
 <br>
 <details>
