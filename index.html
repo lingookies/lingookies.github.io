@@ -16,8 +16,9 @@
         
         img { max-width: 100%; height: auto; display: block; }
         
+        /* Widened Container to prevent text cut-offs */
         .container {
-            max-width: 1100px;
+            max-width: 90%; /* Uses 90% of screen width instead of a fixed pixel width */
             margin: 0 auto;
             padding: 0 2rem;
         }
@@ -26,7 +27,6 @@
         h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
         p { font-size: 1.15rem; margin-bottom: 1.5rem; color: #333; }
         .text-center { text-align: center; }
-        .highlight { color: #d9534f; } /* Accent color for emphasis */
 
         /* App Store Badges */
         .badges { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -37,96 +37,112 @@
         
         /* 1. Hero Section (FDF3DA to 4CB8B8) */
         .hero-section {
-            background: linear-gradient(180deg, #FDF3DA 0%, #4CB8B8 100%);
-            padding: 6rem 0;
+            background-image: linear-gradient(180deg, #FDF3DA 0%, #4CB8B8 100%);
+            background-attachment: fixed; /* Makes the background stay still */
+            background-size: cover;
+            min-height: 100vh; /* Forces section to occupy 100% of viewport height */
+            display: flex; /* Centers content vertically */
+            align-items: center;
+            padding: 4rem 0; 
         }
         .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.2fr; /* Gives the text slightly more horizontal space */
             gap: 4rem;
             align-items: center;
+            width: 100%;
         }
-        .hero-text h1 { font-size: 3rem; margin-bottom: 1.5rem; }
+        .hero-text h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
         .hero-text ul {
             list-style-type: none;
             margin-bottom: 2.5rem;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
         }
         .hero-text li { margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
         .hero-text li::before { content: "✓"; color: #0f5132; font-weight: bold; }
-        .hero-image img { border-radius: 20px; max-height: 650px; margin: 0 auto; }
+        .hero-image img { border-radius: 20px; max-height: 75vh; margin: 0 auto; }
 
         /* 2. Philosophy Section (4CB8B8 to FDF3DA) */
         .philosophy-section {
-            background: linear-gradient(180deg, #4CB8B8 0%, #FDF3DA 100%);
+            background-image: linear-gradient(180deg, #4CB8B8 0%, #FDF3DA 100%);
+            background-attachment: fixed; /* Makes the background stay still */
+            background-size: cover;
             padding: 8rem 0;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
         }
         .philosophy-content {
-            max-width: 800px;
+            max-width: 1200px; /* Widened significantly so text stays on one line */
             margin: 0 auto;
             text-align: center;
         }
-        .philosophy-content h2 { font-size: 2.5rem; margin-bottom: 1.5rem; color: #111; }
-        .philosophy-content p { font-size: 1.3rem; font-weight: 500; }
+        .philosophy-content h2 { font-size: 3rem; margin-bottom: 1.5rem; color: #111; }
+        .philosophy-content p { font-size: 1.4rem; font-weight: 500; }
 
         /* 3. The Secret / Logic Section */
         .logic-section { padding: 6rem 0; }
         .logic-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 5rem;
             align-items: center;
-            margin-top: 4rem;
         }
         .logic-text h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
         .logic-box {
             background: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             margin-top: 2rem;
         }
-        .logic-box h3 { font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem;}
-        .logic-box p { font-size: 1.1rem; margin-bottom: 1rem; }
-        .logic-images { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .logic-box h3 { font-size: 1.6rem; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 1rem;}
+        .logic-box p { font-size: 1.2rem; margin-bottom: 1rem; }
+        .logic-images { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
         .framed-mockup { border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
 
         /* 4. Features Section */
-        .features-section { padding: 6rem 0; background-color: white; border-radius: 40px; margin: 0 1rem; }
-        .features-header { text-align: center; max-width: 700px; margin: 0 auto 4rem auto; }
-        .features-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .features-section { padding: 6rem 0; background-color: white; border-radius: 40px; margin: 0 2rem; }
+        .features-header { text-align: center; max-width: 900px; margin: 0 auto 5rem auto; }
+        .features-header h2 { font-size: 3rem; margin-bottom: 1rem; }
+        .features-header p { font-size: 1.3rem; }
         
         .feature-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 5rem;
             align-items: center;
-            margin-bottom: 6rem;
+            margin-bottom: 7rem;
+            padding: 0 4rem;
         }
         .feature-row:nth-child(even) .feature-text { order: 2; }
         .feature-row:nth-child(even) .feature-visual { order: 1; }
         
-        .feature-text h3 { font-size: 1.8rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .feature-text h3 { font-size: 2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .feature-text p { font-size: 1.2rem; }
         .feature-visual { display: flex; justify-content: center; gap: 1rem; position: relative; }
-        .feature-visual img { max-height: 500px; object-fit: contain; }
+        .feature-visual img { max-height: 550px; object-fit: contain; }
 
         /* 5. CTA Section */
-        .cta-section { padding: 8rem 0; text-align: center; }
-        .cta-section h2 { font-size: 3rem; margin-bottom: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .cta-section { padding: 10rem 0; text-align: center; }
+        .cta-section h2 { font-size: 3.5rem; margin-bottom: 1.5rem; max-width: 1000px; margin-left: auto; margin-right: auto; }
+        .cta-section p { font-size: 1.4rem; max-width: 800px; margin: 0 auto; }
         .cta-section .badges { justify-content: center; margin-top: 3rem; }
 
         /* Footer */
-        .legal-footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #666; }
+        .legal-footer { text-align: center; padding: 3rem 2rem; font-size: 0.85rem; color: #666; }
 
         /* Responsive Design */
-        @media (max-width: 900px) {
-            .hero-grid, .logic-grid, .feature-row { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+        @media (max-width: 1024px) {
+            .hero-grid, .logic-grid, .feature-row { grid-template-columns: 1fr; gap: 4rem; text-align: center; }
+            .feature-row { padding: 0 1rem; }
             .feature-row:nth-child(even) .feature-text { order: 1; }
             .feature-row:nth-child(even) .feature-visual { order: 2; }
-            .hero-text h1 { font-size: 2.5rem; }
+            .hero-text h1 { font-size: 2.8rem; }
             .badges { justify-content: center; }
             .hero-text ul { display: inline-block; text-align: left; }
+            .hero-section { min-height: auto; padding: 6rem 0; } /* Let mobile flow naturally */
         }
     </style>
 </head>
@@ -194,7 +210,6 @@
                 <p>By learning these essential pairings as complete expressions, you bypass the translation phase entirely. Move beyond random vocabulary and master the language Italians actually speak!</p>
             </div>
 
-            <!-- Feature 1 -->
             <div class="feature-row">
                 <div class="feature-text">
                     <h3>🎯 1000 Essential Expressions</h3>
@@ -205,7 +220,6 @@
                 </div>
             </div>
 
-            <!-- Feature 2 -->
             <div class="feature-row">
                 <div class="feature-text">
                     <h3>🎧 Native Audio & Real-Life Examples</h3>
@@ -216,7 +230,6 @@
                 </div>
             </div>
 
-            <!-- Feature 3 -->
             <div class="feature-row">
                 <div class="feature-text">
                     <h3>🧠 Smart Flashcards & Quizzes</h3>
@@ -224,11 +237,10 @@
                 </div>
                 <div class="feature-visual">
                     <img src="images/flashcard_framed.png" alt="Interactive Flashcard" class="framed-mockup">
-                    <img src="images/multiple_framed.png" alt="Multiple Choice Quiz" class="framed-mockup" style="display: none; /* Hide on mobile, handled by CSS if needed, or keep for overlap effect */">
+                    <img src="images/multiple_framed.png" alt="Multiple Choice Quiz" class="framed-mockup" style="display: none; /* Can reveal via CSS if you want an overlap effect */">
                 </div>
             </div>
 
-            <!-- Feature 4 -->
             <div class="feature-row">
                 <div class="feature-text">
                     <h3>📚 Quick Reference Library</h3>
