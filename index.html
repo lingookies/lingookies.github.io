@@ -28,7 +28,6 @@
             max-width: 90%;
             margin: 0 auto;
             padding: 0 2rem;
-            width: 100%;
         }
 
         /* Typography */
@@ -36,9 +35,9 @@
         p { font-size: 1.15rem; margin-bottom: 1.5rem; color: #333; }
         .text-center { text-align: center; }
 
-        /* App Store Badges */
-        .badges { display: flex; gap: 1rem; flex-wrap: wrap; }
-        .badges img { height: 55px; width: auto; transition: transform 0.2s; }
+        /* App Store Badges (Fixed scaling for SVGs) */
+        .badges { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+        .badges img { width: 160px; height: auto; transition: transform 0.2s; }
         .badges a:hover img { transform: scale(1.05); }
 
         /* --- Sections & Gradients --- */
@@ -49,7 +48,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 4rem 0; 
+            padding: 3rem 0; 
         }
         .hero-section h1 {
             font-size: 3.5rem;
@@ -76,6 +75,18 @@
             align-items: center;
             width: 100%;
         }
+
+        @media screen and (min-width:768px) {
+            .hero-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                gap: 4rem;
+                align-items: center;
+                width: 70%;
+                margin: 0 auto;
+            }   
+        }
+        
         .hero-text ul {
             list-style-type: none;
             margin-bottom: 2.5rem;
@@ -84,7 +95,23 @@
         }
         .hero-text li { margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
         .hero-text li::before { content: "✓"; color: #0f5132; font-weight: bold; }
-        .hero-image img { border-radius: 20px; max-height: 75vh; margin: 0 auto; }
+        .hero-desktop .hero-image img { max-height: 60vh; margin: 0 auto; }
+
+        /* Hero Visibility Control */
+        .hero-mobile { display: none; }
+        .hero-desktop { display: block; }
+
+        @media (max-width: 767px) {
+            .hero-desktop { display: none !important; }
+            .hero-mobile { display: block; text-align: center; }
+            .hero-section { min-height: auto; padding: 3rem 0; }
+            .hero-mobile .hero-image img {
+                width: 100%;
+                max-width: 260px;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
 
         /* 2. Philosophy Section (4CB8B8 to FDF3DA) */
         .philosophy-section {
@@ -161,9 +188,7 @@
             .feature-row { padding: 0 1rem; }
             .feature-row:nth-child(even) .feature-text { order: 1; }
             .feature-row:nth-child(even) .feature-visual { order: 2; }
-            .badges { justify-content: center; }
             .hero-text ul { display: inline-block; text-align: left; }
-            .hero-section { min-height: auto; padding: 6rem 0; }
         }
     </style>
 </head>
@@ -172,31 +197,55 @@
     <!-- HERO SECTION -->
     <section class="hero-section">
         <div class="container-wide">
-            <h1>Struggling to learn Italian? Stop wasting your time with vocabulary lists.</h1>
-            <h2>Native speakers are cheaters. They use <span style="color: #cb6229;">collocations</span>.</h2>
-            <div class="hero-grid">
-                <div class="hero-image">
-                    <img src="images/267shots_so.png" alt="Learn Italian Expressions App Mockup">
-                </div>
-                <div class="hero-text">
-                    <h3>Your cheat codes to Italian fluency</h3>
-                    <p>Italian speakers <em>make</em> showers. They don't have pets, they have <em>domestic animals</em>. And they are never in a hurry – they <em>have</em> hurry.</p>
-                    <p>Stop translating English logic into Italian. Discover how words actually combine to form natural, native-sounding sentences. Master essential Italian collocations with the <strong>Learn Italian Expressions app</strong>.</p>
-                    <ul>
-                        <li>1000+ Italian collocations</li>
-                        <li>1000+ native audio recordings</li>
-                        <li>Interactive flashcards and quizzes</li>
-                    </ul>
-                    <div class="badges">
-                        <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-                        </a>
-                        <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
-                        </a>
+            
+            <!-- DESKTOP HERO (Shown on screens >= 768px) -->
+            <div class="hero-desktop">
+                <h1>Struggling to learn Italian?<br>That's because <span style="color: #cb6229;">native speakers are cheaters.</span></h1>
+                <div class="hero-grid">
+                    <div class="hero-image">
+                        <img src="images/267shots_so.png" alt="Learn Italian Expressions App Mockup">
+                    </div>
+                    <div class="hero-text">
+                        <h3>Start using cheat codes too. Learn <span style="color: #cb6229;">collocations</span>.</h3>
+                        <p>Italian speakers <em>make</em> showers. They don't have pets, they have <em>domestic animals</em>. And they are never in a hurry – they <em>have</em> hurry.</p>
+                        <p>Stop translating English logic into Italian. Discover how words actually combine to form natural, native-sounding sentences. Master essential Italian collocations with the <strong>Learn Italian Expressions app</strong>.</p>
+                        <ul>
+                            <li>1000+ Italian collocations</li>
+                            <li>1000+ native audio recordings</li>
+                            <li>Interactive flashcards and quizzes</li>
+                        </ul>
+                        <div class="badges">
+                            <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- MOBILE HERO (Shown on smartphones < 768px) -->
+            <div class="hero-mobile">
+                <h1 style="font-size: 2.1rem; margin-bottom: 1.2rem;">Struggling to learn Italian?<br>That's because <span style="color: #cb6229;">native speakers are cheaters.</span></h1>
+                <h2 style="font-size: 1.35rem; margin-bottom: 1.2rem;">Start using cheat codes too. Learn <span style="color: #cb6229;">collocations</span>.</h2>
+                <p style="font-size: 1.05rem; margin-bottom: 1.8rem;">Discover how Italian words combine to form natural, native-sounding sentences with the <strong>Learn Italian Expressions app</strong>.</p>
+                
+                <div class="badges" style="margin-bottom: 2rem;">
+                    <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/267shots_so.png" alt="Learn Italian Expressions App Mockup">
+                </div>
+            </div>
+
         </div>
     </section>
 
