@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Italian Expressions by Lingookies</title>
- <style>
-        /* Global Reset and Typography */
+    <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -23,7 +22,7 @@
             padding: 0 2rem;
         }
 
-        /* ONLY FIX: Make the hero section wider across the viewport */
+        /* Hero section wider across the viewport */
         .hero-section .container {
             max-width: 85%; 
         }
@@ -35,7 +34,7 @@
             padding: 0 2rem;
         }
 
-        /* Typography (Kept the larger, punchy sizes) */
+        /* Typography */
         h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
         p { font-size: 1.15rem; margin-bottom: 1.5rem; color: #333; }
         .text-center { text-align: center; }
@@ -52,9 +51,22 @@
             background-image: linear-gradient(180deg, #FDF3DA 0%, #4CB8B8 100%);
             min-height: 100vh; /* Forces section to occupy 100% of viewport height, fixing zoom issues */
             display: flex; /* Centers content vertically */
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             padding: 4rem 0; 
         }
+        /* Top H1 Heading across the hero container */
+        .hero-title-wrapper {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero-title-wrapper h1 {
+            font-size: 3.8rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .hero-grid {
             display: grid;
             grid-template-columns: 1fr 1fr; 
@@ -62,7 +74,6 @@
             align-items: center;
             width: 100%;
         }
-        .hero-text h1 { font-size: 3.5rem; margin-bottom: 1.5rem; }
         .hero-text ul {
             list-style-type: none;
             margin-bottom: 2.5rem;
@@ -147,7 +158,7 @@
             .feature-row { padding: 0 1rem; }
             .feature-row:nth-child(even) .feature-text { order: 1; }
             .feature-row:nth-child(even) .feature-visual { order: 2; }
-            .hero-text h1 { font-size: 2.8rem; }
+            .hero-title-wrapper h1 { font-size: 2.5rem; }
             .badges { justify-content: center; }
             .hero-text ul { display: inline-block; text-align: left; }
             .hero-section { min-height: auto; padding: 6rem 0; }
@@ -158,24 +169,29 @@
 
     <!-- HERO SECTION -->
     <section class="hero-section">
-        <div class="container hero-grid">
-            <div class="hero-image">
-                <img src="images/267shots_so.png" alt="Learn Italian Expressions App Mockup">
+        <div class="container">
+            <!-- Full-width H1 heading placed on top inside the hero container -->
+            <div class="hero-title-wrapper">
+                <h1>Stop wasting your time reviewing vocabulary lists. Learn Italian in context</h1>
             </div>
-            <div class="hero-text">
-                <h1>Learn Italian in context. Stop wasting your time reviewing vocabulary lists.</h1>
-                <ul>
-                    <li>1000+ Italian collocations</li>
-                    <li>1000+ native audio recordings</li>
-                    <li>Interactive flashcards and quizzes</li>
-                </ul>
-                <div class="badges">
-                    <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-                    </a>
-                    <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
-                    </a>
+            <div class="hero-grid">
+                <div class="hero-image">
+                    <img src="images/267shots_so.png" alt="Learn Italian Expressions App Mockup" onerror="this.src='https://placehold.co/400x800/4CB8B8/ffffff?text=App+Mockup'">
+                </div>
+                <div class="hero-text">
+                    <ul>
+                        <li>1000+ Italian collocations</li>
+                        <li>1000+ native audio recordings</li>
+                        <li>Interactive flashcards and quizzes</li>
+                    </ul>
+                    <div class="badges">
+                        <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                        </a>
+                        <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -204,8 +220,8 @@
                 </div>
             </div>
             <div class="logic-images">
-                <img src="images/collocation1_framed.png" alt="Italian Collocation Example 1" class="framed-mockup">
-                <img src="images/collocation2_framed.png" alt="Italian Collocation Example 2" class="framed-mockup" style="margin-top: 3rem;">
+                <img src="images/collocation1_framed.png" alt="Italian Collocation Example 1" class="framed-mockup" onerror="this.src='https://placehold.co/250x500/ffffff/333333?text=Collocation+1'">
+                <img src="images/collocation2_framed.png" alt="Italian Collocation Example 2" class="framed-mockup" style="margin-top: 3rem;" onerror="this.src='https://placehold.co/250x500/ffffff/333333?text=Collocation+2'">
             </div>
         </div>
     </section>
@@ -224,7 +240,7 @@
                     <p>Skip the filler. We handpicked the most useful, everyday word combinations for beginners. You will only learn the Italian phrases you will actually hear and use in Italy.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/array_framed.png" alt="List of Italian Expressions" class="framed-mockup">
+                    <img src="images/array_framed.png" alt="List of Italian Expressions" class="framed-mockup" onerror="this.src='https://placehold.co/300x600/f8f9fa/333333?text=Expressions+List'">
                 </div>
             </div>
 
@@ -234,7 +250,7 @@
                     <p>No robotic text-to-speech. Perfect your pronunciation with high-quality voice recordings from a native speaker. Every expression includes a practical example sentence so you can see exactly how to use it in real conversations.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/home_framed.png" alt="Home Dashboard" class="framed-mockup">
+                    <img src="images/home_framed.png" alt="Home Dashboard" class="framed-mockup" onerror="this.src='https://placehold.co/300x600/f8f9fa/333333?text=Home+Dashboard'">
                 </div>
             </div>
 
@@ -244,7 +260,7 @@
                     <p>Memorize faster! Test your vocabulary retention with our distraction-free flashcards, and check your progress with interactive multiple-choice and fill-in-the-gap quizzes.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/flashcard_framed.png" alt="Interactive Flashcard" class="framed-mockup">
+                    <img src="images/flashcard_framed.png" alt="Interactive Flashcard" class="framed-mockup" onerror="this.src='https://placehold.co/300x600/f8f9fa/333333?text=Flashcard'">
                 </div>
             </div>
 
@@ -254,7 +270,7 @@
                     <p>Need to find a phrase fast? Browse our complete directory of expressions anytime by specific topics (like abstract ideas, celebrations, or daily routine) to quickly review what you have learned.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/categories_framed.png" alt="Browse by Categories" class="framed-mockup">
+                    <img src="images/categories_framed.png" alt="Browse by Categories" class="framed-mockup" onerror="this.src='https://placehold.co/300x600/f8f9fa/333333?text=Categories'">
                 </div>
             </div>
         </div>
