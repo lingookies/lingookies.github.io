@@ -16,14 +16,21 @@
         
         img { max-width: 100%; height: auto; display: block; }
         
-        /* Widened Container to prevent text cut-offs */
+        /* Standard Container (Reverted to original width) */
         .container {
-            max-width: 90%; /* Uses 90% of screen width instead of a fixed pixel width */
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 2rem;
         }
 
-        /* Typography */
+        /* Wide Container (Specifically for the Logic Section) */
+        .container-wide {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Typography (Kept the larger, punchy sizes) */
         h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
         p { font-size: 1.15rem; margin-bottom: 1.5rem; color: #333; }
         .text-center { text-align: center; }
@@ -38,16 +45,14 @@
         /* 1. Hero Section (FDF3DA to 4CB8B8) */
         .hero-section {
             background-image: linear-gradient(180deg, #FDF3DA 0%, #4CB8B8 100%);
-            background-attachment: fixed; /* Makes the background stay still */
-            background-size: cover;
-            min-height: 100vh; /* Forces section to occupy 100% of viewport height */
+            min-height: 100vh; /* Forces section to occupy 100% of viewport height, fixing zoom issues */
             display: flex; /* Centers content vertically */
             align-items: center;
             padding: 4rem 0; 
         }
         .hero-grid {
             display: grid;
-            grid-template-columns: 1fr 1.2fr; /* Gives the text slightly more horizontal space */
+            grid-template-columns: 1fr 1fr; 
             gap: 4rem;
             align-items: center;
             width: 100%;
@@ -66,22 +71,18 @@
         /* 2. Philosophy Section (4CB8B8 to FDF3DA) */
         .philosophy-section {
             background-image: linear-gradient(180deg, #4CB8B8 0%, #FDF3DA 100%);
-            background-attachment: fixed; /* Makes the background stay still */
-            background-size: cover;
             padding: 8rem 0;
             min-height: 60vh;
             display: flex;
             align-items: center;
         }
         .philosophy-content {
-            max-width: 1200px; /* Widened significantly so text stays on one line */
-            margin: 0 auto;
             text-align: center;
         }
         .philosophy-content h2 { font-size: 3rem; margin-bottom: 1.5rem; color: #111; }
         .philosophy-content p { font-size: 1.4rem; font-weight: 500; }
 
-        /* 3. The Secret / Logic Section */
+        /* 3. The Secret / Logic Section (Using wide container) */
         .logic-section { padding: 6rem 0; }
         .logic-grid {
             display: grid;
@@ -102,7 +103,7 @@
         .logic-images { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
         .framed-mockup { border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
 
-        /* 4. Features Section */
+        /* 4. Features Section (Back to standard container) */
         .features-section { padding: 6rem 0; background-color: white; border-radius: 40px; margin: 0 2rem; }
         .features-header { text-align: center; max-width: 900px; margin: 0 auto 5rem auto; }
         .features-header h2 { font-size: 3rem; margin-bottom: 1rem; }
@@ -111,10 +112,10 @@
         .feature-row {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
+            gap: 4rem;
             align-items: center;
-            margin-bottom: 7rem;
-            padding: 0 4rem;
+            margin-bottom: 6rem;
+            padding: 0 2rem;
         }
         .feature-row:nth-child(even) .feature-text { order: 2; }
         .feature-row:nth-child(even) .feature-visual { order: 1; }
@@ -125,7 +126,7 @@
         .feature-visual img { max-height: 550px; object-fit: contain; }
 
         /* 5. CTA Section */
-        .cta-section { padding: 10rem 0; text-align: center; }
+        .cta-section { padding: 8rem 0; text-align: center; }
         .cta-section h2 { font-size: 3.5rem; margin-bottom: 1.5rem; max-width: 1000px; margin-left: auto; margin-right: auto; }
         .cta-section p { font-size: 1.4rem; max-width: 800px; margin: 0 auto; }
         .cta-section .badges { justify-content: center; margin-top: 3rem; }
@@ -142,7 +143,7 @@
             .hero-text h1 { font-size: 2.8rem; }
             .badges { justify-content: center; }
             .hero-text ul { display: inline-block; text-align: left; }
-            .hero-section { min-height: auto; padding: 6rem 0; } /* Let mobile flow naturally */
+            .hero-section { min-height: auto; padding: 6rem 0; }
         }
     </style>
 </head>
@@ -152,7 +153,7 @@
     <section class="hero-section">
         <div class="container hero-grid">
             <div class="hero-image">
-                <img src="images/267shots_so.png" alt="Learn Italian Expressions App Mockup">
+                <img src="https://lingookies.com/wp-content/uploads/2026/09/267shots_so-481x1024.png" alt="Learn Italian Expressions App Mockup">
             </div>
             <div class="hero-text">
                 <h1>Learn Italian in context with the <strong>new Learn Italian Expressions app</strong>.</h1>
@@ -181,9 +182,9 @@
         </div>
     </section>
 
-    <!-- LOGIC SECTION -->
+    <!-- LOGIC SECTION (Using the wide container) -->
     <section class="logic-section">
-        <div class="container logic-grid">
+        <div class="container-wide logic-grid">
             <div class="logic-text">
                 <h2>💡 The Secret to Sounding Native</h2>
                 <p>When you only study single words, you end up translating English logic directly into Italian. This leads to awkward pauses and confusing mistakes. The secret that polyglots use to speak faster is mastering <strong>collocations</strong> – words that naturally belong together.</p>
@@ -196,13 +197,13 @@
                 </div>
             </div>
             <div class="logic-images">
-                <img src="images/collocation1_framed.png" alt="Italian Collocation Example 1" class="framed-mockup">
-                <img src="images/collocation2_framed.png" alt="Italian Collocation Example 2" class="framed-mockup" style="margin-top: 3rem;">
+                <img src="collocation1_framed.jpg" alt="Italian Collocation Example 1" class="framed-mockup">
+                <img src="collocation2_framed.jpg" alt="Italian Collocation Example 2" class="framed-mockup" style="margin-top: 3rem;">
             </div>
         </div>
     </section>
 
-    <!-- FEATURES SECTION -->
+    <!-- FEATURES SECTION (Back to standard container) -->
     <section class="features-section">
         <div class="container">
             <div class="features-header">
@@ -216,7 +217,7 @@
                     <p>Skip the filler. We handpicked the most useful, everyday word combinations for beginners. You will only learn the Italian phrases you will actually hear and use in Italy.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/array_framed.png" alt="List of Italian Expressions" class="framed-mockup">
+                    <img src="array_framed.jpg" alt="List of Italian Expressions" class="framed-mockup">
                 </div>
             </div>
 
@@ -226,7 +227,7 @@
                     <p>No robotic text-to-speech. Perfect your pronunciation with high-quality voice recordings from a native speaker. Every expression includes a practical example sentence so you can see exactly how to use it in real conversations.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/home_framed.png" alt="Home Dashboard" class="framed-mockup">
+                    <img src="home_framed.jpg" alt="Home Dashboard" class="framed-mockup">
                 </div>
             </div>
 
@@ -236,8 +237,8 @@
                     <p>Memorize faster! Test your vocabulary retention with our distraction-free flashcards, and check your progress with interactive multiple-choice and fill-in-the-gap quizzes.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/flashcard_framed.png" alt="Interactive Flashcard" class="framed-mockup">
-                    <img src="images/multiple_framed.png" alt="Multiple Choice Quiz" class="framed-mockup" style="display: none; /* Can reveal via CSS if you want an overlap effect */">
+                    <img src="flashcard_framed.jpg" alt="Interactive Flashcard" class="framed-mockup">
+                    <img src="multiple_framed.jpg" alt="Multiple Choice Quiz" class="framed-mockup" style="display: none;">
                 </div>
             </div>
 
@@ -247,7 +248,7 @@
                     <p>Need to find a phrase fast? Browse our complete directory of expressions anytime by specific topics (like abstract ideas, celebrations, or daily routine) to quickly review what you have learned.</p>
                 </div>
                 <div class="feature-visual">
-                    <img src="images/categories_framed.png" alt="Browse by Categories" class="framed-mockup">
+                    <img src="categories_framed.jpg" alt="Browse by Categories" class="framed-mockup">
                 </div>
             </div>
         </div>
