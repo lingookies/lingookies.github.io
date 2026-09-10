@@ -6,165 +6,256 @@
     <title>Learn Italian Expressions by Lingookies</title>
     <style>
         /* Global Reset and Typography */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            /* 180 degree gradient from FDF3DA to 4CB8B8 */
-            background: linear-gradient(180deg, #FDF3DA 0%, #4CB8B8 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
             color: #1a1a1a;
+            line-height: 1.6;
+            background-color: #FDF3DA; /* Base color for the bottom of the page */
+        }
+        
+        img { max-width: 100%; height: auto; display: block; }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
-        /* Main Container setup for 60-80% width */
-        .main-content {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem 2rem;
-        }
+        /* Typography */
+        h1, h2, h3 { font-weight: 800; letter-spacing: -0.03em; line-height: 1.2; }
+        p { font-size: 1.15rem; margin-bottom: 1.5rem; color: #333; }
+        .text-center { text-align: center; }
+        .highlight { color: #d9534f; } /* Accent color for emphasis */
 
-        /* Two-column Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1000px; /* Constrains width on very large screens */
-            width: 80%; /* Takes up ~80% of horizontal space */
+        /* App Store Badges */
+        .badges { display: flex; gap: 1rem; flex-wrap: wrap; }
+        .badges img { height: 55px; width: auto; transition: transform 0.2s; }
+        .badges a:hover img { transform: scale(1.05); }
+
+        /* --- Sections & Gradients --- */
+        
+        /* 1. Hero Section (FDF3DA to 4CB8B8) */
+        .hero-section {
+            background: linear-gradient(180deg, #FDF3DA 0%, #4CB8B8 100%);
+            padding: 6rem 0;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 4rem;
+            align-items: center;
         }
-
-        /* Left Column: Image */
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            max-height: 700px;
-            border-radius: 20px; /* Optional: smooths the corners of the mockup */
-        }
-
-        /* Right Column: Text & Badges */
-        .hero-text {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .hero-text h1 {
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.4;
-            margin-bottom: 2rem;
-        }
-
-        .hero-text h1 strong {
-            font-weight: 700;
-        }
-
+        .hero-text h1 { font-size: 3rem; margin-bottom: 1.5rem; }
         .hero-text ul {
-            list-style-type: disc;
-            padding-left: 1.5rem;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-            line-height: 1.8;
+            list-style-type: none;
+            margin-bottom: 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
         }
+        .hero-text li { margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+        .hero-text li::before { content: "✓"; color: #0f5132; font-weight: bold; }
+        .hero-image img { border-radius: 20px; max-height: 650px; margin: 0 auto; }
 
-        /* App Store Badges Stacked */
-        .badges {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: flex-start;
+        /* 2. Philosophy Section (4CB8B8 to FDF3DA) */
+        .philosophy-section {
+            background: linear-gradient(180deg, #4CB8B8 0%, #FDF3DA 100%);
+            padding: 8rem 0;
         }
+        .philosophy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .philosophy-content h2 { font-size: 2.5rem; margin-bottom: 1.5rem; color: #111; }
+        .philosophy-content p { font-size: 1.3rem; font-weight: 500; }
 
-        .badges img {
-            height: 55px; /* Adjust badge size here */
-            width: auto;
+        /* 3. The Secret / Logic Section */
+        .logic-section { padding: 6rem 0; }
+        .logic-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 4rem;
         }
+        .logic-text h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .logic-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+        }
+        .logic-box h3 { font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem;}
+        .logic-box p { font-size: 1.1rem; margin-bottom: 1rem; }
+        .logic-images { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .framed-mockup { border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+
+        /* 4. Features Section */
+        .features-section { padding: 6rem 0; background-color: white; border-radius: 40px; margin: 0 1rem; }
+        .features-header { text-align: center; max-width: 700px; margin: 0 auto 4rem auto; }
+        .features-header h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+        
+        .feature-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+        .feature-row:nth-child(even) .feature-text { order: 2; }
+        .feature-row:nth-child(even) .feature-visual { order: 1; }
+        
+        .feature-text h3 { font-size: 1.8rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .feature-visual { display: flex; justify-content: center; gap: 1rem; position: relative; }
+        .feature-visual img { max-height: 500px; object-fit: contain; }
+
+        /* 5. CTA Section */
+        .cta-section { padding: 8rem 0; text-align: center; }
+        .cta-section h2 { font-size: 3rem; margin-bottom: 1.5rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .cta-section .badges { justify-content: center; margin-top: 3rem; }
 
         /* Footer */
-        .legal-footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.75rem;
-            color: #555555;
-            line-height: 1.5;
-        }
+        .legal-footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #666; }
 
-        /* Mobile & Tablet Responsive Adjustments */
+        /* Responsive Design */
         @media (max-width: 900px) {
-            .hero {
-                width: 95%;
-                gap: 2rem;
-            }
-            .hero-text h1 {
-                font-size: 1.75rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            /* Stack columns on mobile */
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                gap: 3rem;
-            }
-            .hero-text ul {
-                text-align: left;
-                display: inline-block; /* Keeps bullets neatly aligned while centered overall */
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .badges {
-                align-items: center; /* Center badges on mobile */
-            }
+            .hero-grid, .logic-grid, .feature-row { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+            .feature-row:nth-child(even) .feature-text { order: 1; }
+            .feature-row:nth-child(even) .feature-visual { order: 2; }
+            .hero-text h1 { font-size: 2.5rem; }
+            .badges { justify-content: center; }
+            .hero-text ul { display: inline-block; text-align: left; }
         }
     </style>
 </head>
 <body>
 
-    <main class="main-content">
-        <div class="hero">
-            <!-- Left Column (First in HTML for mobile stacking) -->
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-grid">
             <div class="hero-image">
-                <!-- Replace src with your local GitHub path (e.g., "assets/screenshot.png") when uploaded -->
                 <img src="https://lingookies.com/wp-content/uploads/2026/09/267shots_so-481x1024.png" alt="Learn Italian Expressions App Mockup">
             </div>
-
-            <!-- Right Column -->
             <div class="hero-text">
-                <h1>Learn Italian in context with the <strong>new Learn Italian Expressions app</strong> by Lingookies!</h1>
-                
+                <h1>Learn Italian in context with the <strong>new Learn Italian Expressions app</strong>.</h1>
                 <ul>
-                    <li>1000+ Italian expressions and collocations</li>
+                    <li>1000+ Italian collocations</li>
                     <li>1000+ native audio recordings</li>
-                    <li>interactive flashcards and quizzes</li>
+                    <li>Interactive flashcards and quizzes</li>
                 </ul>
-
                 <div class="badges">
-                    <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank" rel="noopener noreferrer">
+                    <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
                     </a>
-                    <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank" rel="noopener noreferrer">
+                    <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
                     </a>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- PHILOSOPHY SECTION -->
+    <section class="philosophy-section">
+        <div class="container philosophy-content">
+            <h2>Stop translating in your head and start speaking Italian naturally!</h2>
+            <p>Do you memorize a lot of Italian vocabulary but still freeze when it's time to build a real sentence? You are not alone. True fluency comes from mastering real Italian expressions – it doesn't come from learning isolated words without any context.</p>
+        </div>
+    </section>
+
+    <!-- LOGIC SECTION -->
+    <section class="logic-section">
+        <div class="container logic-grid">
+            <div class="logic-text">
+                <h2>💡 The Secret to Sounding Native</h2>
+                <p>When you only study single words, you end up translating English logic directly into Italian. This leads to awkward pauses and confusing mistakes. The secret that polyglots use to speak faster is mastering <strong>collocations</strong> – words that naturally belong together.</p>
+                
+                <div class="logic-box">
+                    <h3>❌ English Logic vs. ✅ Italian Logic</h3>
+                    <p>In English, you <strong>"take"</strong> a shower.<br>In Italian, you <strong>"make"</strong> a shower.</p>
+                    <p>In English, you <strong>"pay"</strong> attention.<br>In Italian, you <strong>"lend"</strong> attention.</p>
+                    <p>In English, you <strong>"are"</strong> right or wrong.<br>In Italian, you <strong>"have"</strong> right or wrong.</p>
+                </div>
+            </div>
+            <div class="logic-images">
+                <img src="collocation1_framed.jpg" alt="Italian Collocation Example 1" class="framed-mockup">
+                <img src="collocation2_framed.jpg" alt="Italian Collocation Example 2" class="framed-mockup" style="margin-top: 3rem;">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2>🚀 Master the Building Blocks of Italian</h2>
+                <p>By learning these essential pairings as complete expressions, you bypass the translation phase entirely. Move beyond random vocabulary and master the language Italians actually speak!</p>
+            </div>
+
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>🎯 1000 Essential Expressions</h3>
+                    <p>Skip the filler. We handpicked the most useful, everyday word combinations for beginners. You will only learn the Italian phrases you will actually hear and use in Italy.</p>
+                </div>
+                <div class="feature-visual">
+                    <img src="array_framed.jpg" alt="List of Italian Expressions" class="framed-mockup">
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>🎧 Native Audio & Real-Life Examples</h3>
+                    <p>No robotic text-to-speech. Perfect your pronunciation with high-quality voice recordings from a native speaker. Every expression includes a practical example sentence so you can see exactly how to use it in real conversations.</p>
+                </div>
+                <div class="feature-visual">
+                    <img src="home_framed.jpg" alt="Home Dashboard" class="framed-mockup">
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>🧠 Smart Flashcards & Quizzes</h3>
+                    <p>Memorize faster! Test your vocabulary retention with our distraction-free flashcards, and check your progress with interactive multiple-choice and fill-in-the-gap quizzes.</p>
+                </div>
+                <div class="feature-visual">
+                    <img src="flashcard_framed.jpg" alt="Interactive Flashcard" class="framed-mockup">
+                    <img src="multiple_framed.jpg" alt="Multiple Choice Quiz" class="framed-mockup" style="display: none; /* Hide on mobile, handled by CSS if needed, or keep for overlap effect */">
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>📚 Quick Reference Library</h3>
+                    <p>Need to find a phrase fast? Browse our complete directory of expressions anytime by specific topics (like abstract ideas, celebrations, or daily routine) to quickly review what you have learned.</p>
+                </div>
+                <div class="feature-visual">
+                    <img src="categories_framed.jpg" alt="Browse by Categories" class="framed-mockup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Stop hesitating and start speaking naturally.</h2>
+            <p>Whether you are planning a trip to Italy or just want to sound more like a native, mastering these natural word combinations is your fastest path to fluency. Download today!</p>
+            <div class="badges">
+                <a href="https://play.google.com/store/apps/details?id=com.lingookies.italianwordcombinations" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+                </a>
+                <a href="https://apps.apple.com/us/app/learn-italian-expressions/id6804829253" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
+    </section>
 
     <footer class="legal-footer">
         Google Play and the Google Play logo are trademarks of Google LLC.<br>
