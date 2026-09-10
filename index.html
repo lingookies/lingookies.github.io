@@ -110,11 +110,14 @@
         .features-header p { font-size: 1.3rem; }
         
         .feature-row {
+            max-width: 900px; /* <-- ADD THIS LINE */
+            margin-left: auto;  /* <-- ADD THIS LINE */
+            margin-right: auto; /* <-- ADD THIS LINE */
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 2rem;
             align-items: center;
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
             padding: 0 2rem;
         }
         .feature-row:nth-child(even) .feature-text { order: 2; }
