@@ -11,6 +11,7 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: #1a1a1a;
             line-height: 1.6;
+	overflow-x: hidden;
             background-color: #FDF3DA; /* Base color for the bottom of the page */
         }
         
@@ -213,6 +214,32 @@
             .feature-row:nth-child(even) .feature-visual { order: 2; }
             .hero-text ul { display: inline-block; text-align: left; }
         }
+
+/* Update your existing CTA section */
+        .cta-section { 
+            padding: 8rem 0; 
+            text-align: center; 
+            position: relative; /* ADDED THIS */
+        }
+
+/* NEW: Hand Image Positioning */
+        .building-hand {
+            position: absolute;
+            right: -5px; /* Pushed slightly off-screen to hide the cut edge completely */
+            top: -120px; /* Reaching up into the space below the features section */
+            width: 380px;
+            z-index: 0;
+            pointer-events: none; /* Prevents the image from blocking clicks on links */
+        }
+
+@media (max-width: 1024px) {
+            .building-hand {
+                width: 220px;
+                top: -60px;
+                opacity: 0.2; /* Fades it into the background on small screens so it doesn't clutter text */
+            }
+}
+
     </style>
 </head>
 <body>
@@ -351,9 +378,13 @@
         </div>
     </section>
 
-    <!-- CTA SECTION -->
+<!-- CTA SECTION -->
     <section class="cta-section">
-        <div class="container" style="max-width: 1300px;!important">
+        
+        <!-- NEW: Positioned Hand Image -->
+        <img src="images/mano-blocchi.png" alt="Building Italian sentences block by block" class="building-hand">
+
+        <div class="container" style="max-width: 1300px;!important; position: relative; z-index: 1;">
             <h2>Be a cheater too. Download today.</h2>
             <p>Whether you are planning a trip to Italy or just want to sound more like a native, mastering these natural word combinations is your fastest path to fluency. Download today!</p>
             <div class="badges">
@@ -366,7 +397,6 @@
             </div>
         </div>
     </section>
-
     <footer class="legal-footer">
         Google Play and the Google Play logo are trademarks of Google LLC.<br>
         Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
