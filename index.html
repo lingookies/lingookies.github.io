@@ -52,6 +52,18 @@
         .framed-mockup:hover {
             transform: scale(1.05);
         }
+
+        /* Scroll Reveal Animations (ADDED THIS) */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
         
         /* 1. Hero Section (FDF3DA to 4CB8B8) */
         .hero-section {
@@ -262,7 +274,7 @@
 
     <!-- PHILOSOPHY SECTION -->
     <section class="philosophy-section">
-        <div class="container philosophy-content">
+        <div class="container philosophy-content reveal">
             <h2 style="color: #fff; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);">Stop translating in your head and start speaking Italian naturally!</h2>
             <p>Do you memorize a lot of Italian vocabulary but still freeze when it's time to build a real sentence? You are not alone. True fluency comes from mastering real Italian expressions – it doesn't come from learning isolated words without any context.</p>
         </div>
@@ -271,11 +283,11 @@
     <!-- LOGIC SECTION -->
     <section class="logic-section">
         <div class="container-wide logic-grid">
-            <div class="logic-text">
+            <div class="logic-text reveal">
                 <h2 style="color: #fff;">💡 The secret to sounding native</h2>
                 <p>When you only study single words, you end up translating English logic directly into Italian. This leads to awkward pauses and confusing mistakes. The secret that polyglots use to speak faster is mastering <strong>collocations</strong> – words that naturally belong together.</p>
                 
-                <div class="logic-box">
+                <div class="logic-box reveal">
                     <h3>❌ English logic vs. ✅ Italian logic</h3>
                     <p>In English, you <strong>"take"</strong> a shower.<br>In Italian, you <strong>"make"</strong> a shower.</p>
                     <p>In English, you <strong>"pay"</strong> attention.<br>In Italian, you <strong>"lend"</strong> attention.</p>
@@ -283,8 +295,8 @@
                 </div>
             </div>
             <div class="logic-images">
-                <img src="images/collocation1_framed.png" alt="Italian Collocation Example 1" class="framed-mockup">
-                <img src="images/collocation2_framed.png" alt="Italian Collocation Example 2" class="framed-mockup" style="margin-top: 3rem;">
+                <img src="images/collocation1_framed.png" alt="Italian Collocation Example 1" class="framed-mockup reveal">
+                <img src="images/collocation2_framed.png" alt="Italian Collocation Example 2" class="framed-mockup reveal" style="margin-top: 3rem;">
             </div>
         </div>
     </section>
@@ -292,12 +304,12 @@
     <!-- FEATURES SECTION -->
     <section class="features-section">
         <div class="container">
-            <div class="features-header">
+            <div class="features-header reveal">
                 <h2>🚀 Master the building blocks of Italian</h2>
                 <p>By learning these essential pairings as complete expressions, you bypass the translation phase entirely. Move beyond random vocabulary and master the language Italians actually speak!</p>
             </div>
 
-            <div class="feature-row">
+            <div class="feature-row reveal">
                 <div class="feature-text">
                     <h3>🎯 1000 essential expressions</h3>
                     <p>Skip the filler. We handpicked the most useful, everyday word combinations for beginners. You will only learn the Italian phrases you will actually hear and use in Italy.</p>
@@ -307,7 +319,7 @@
                 </div>
             </div>
 
-            <div class="feature-row">
+            <div class="feature-row reveal">
                 <div class="feature-text">
                     <h3>🎧 Native audio & real-life examples</h3>
                     <p>No robotic text-to-speech. Perfect your pronunciation with high-quality voice recordings from a native speaker. Every expression includes a practical example sentence so you can see exactly how to use it in real conversations.</p>
@@ -317,7 +329,7 @@
                 </div>
             </div>
 
-            <div class="feature-row">
+            <div class="feature-row reveal">
                 <div class="feature-text">
                     <h3>🧠 Smart flashcards & quizzes</h3>
                     <p>Memorize faster! Test your vocabulary retention with our distraction-free flashcards, and check your progress with interactive multiple-choice and fill-in-the-gap quizzes.</p>
@@ -327,7 +339,7 @@
                 </div>
             </div>
 
-            <div class="feature-row">
+            <div class="feature-row reveal">
                 <div class="feature-text">
                     <h3>📚 Quick reference library</h3>
                     <p>Need to find a phrase fast? Browse our complete directory of expressions anytime by specific topics (like abstract ideas, celebrations, or daily routine) to quickly review what you have learned.</p>
@@ -340,7 +352,7 @@
     </section>
 
     <!-- CTA SECTION -->
-    <section class="cta-section">
+    <section class="cta-section reveal">
         <div class="container" style="max-width: 1300px;!important">
             <h2>Be a cheater too. Download today.</h2>
             <p>Whether you are planning a trip to Italy or just want to sound more like a native, mastering these natural word combinations is your fastest path to fluency. Download today!</p>
@@ -355,7 +367,7 @@
         </div>
     </section>
 
-    <footer class="legal-footer">
+    <footer class="legal-footer reveal">
         Google Play and the Google Play logo are trademarks of Google LLC.<br>
         Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
     </footer>
