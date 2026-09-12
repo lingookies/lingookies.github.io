@@ -1,5 +1,5 @@
 # Privacy Policy for Learn Italian Expressions
-**Last updated: August 28th, 2026**
+**Last updated: September 12th, 2026**
 
 This privacy policy is applicable to the Learn Italian Expressions app for mobile devices, together with any related services operated by Lucia Dallaspezia (collectively, the “Application”). Lucia Dallaspezia is hereinafter referred to as the “Service Provider”.
 
@@ -21,9 +21,7 @@ The Application and related services acquire the information you supply when you
 
 The information acquired and stored by the Application when you register an account may include your account name, email address and, for "Sign in with" options, your profile picture URL.
 
-Creating an account is optional as you can navigate the Application with a limited guest mode without creating an account. Signing in with either your Google or Apple account or a dedicated account is however required for accessing all free content in the Application and syncing your progress on multiple devices, and it is required for providing you with subscription-only content.
-
-At the time of writing, it is not possible to authenticate anonymously in the Application, so you will need to create an account if you want to become a Premium member.
+Creating an account is optional as you can navigate the Application anonymously without creating an account. Signing in with either your Google or Apple account or a dedicated account is however required for accessing Premium content in the Application and syncing your progress on multiple devices.
 
 The Service Provider may also use the information you provide to send important information, required notices, and, where permitted by law, marketing communications.
 
